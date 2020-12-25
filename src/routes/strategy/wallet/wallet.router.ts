@@ -1,4 +1,4 @@
-import { WalletModel, AdjustmentModel } from '../../../../../db'
+import { WalletModel, AdjustmentModel } from '@magic8bot/db'
 import { BaseRouter } from '../../base.router'
 
 export class WalletRouter extends BaseRouter {

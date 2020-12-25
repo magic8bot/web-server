@@ -15,10 +15,13 @@
     "dist": "npm run build",
     "rebuild": "npm run clean && npm run dist",
     "start": "node ./index.js",
-    "start:dev": "cross-env NODE_ENV=development nodemon -w ./src -e ts ./index.js"
+    "start:dev": "cross-env NODE_ENV=development nodemon -w ./src -e ts ./index.js",
+    "prepub": "npm run rebuild",
+    "pub": "npm publish --access=public"
   },
   "dependencies": {
-    "@magic8bot/db": "^2.0.5",
+    "@magic8bot/db": "^2.0.6",
+    "@magic8bot/smq": "^1.0.2",
     "body-parser": "^1.19.0",
     "ccxt": "^1.39.61",
     "compression": "^1.7.4",

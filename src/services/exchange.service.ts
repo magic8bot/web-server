@@ -1,6 +1,6 @@
 import ccxt from 'ccxt'
 
-import { ExchangeModel, ExchangeConfig } from '../../../db'
+import { ExchangeModel, ExchangeConfig } from '@magic8bot/db'
 
 export class ExchangeService {
   static load(exchange: string) {

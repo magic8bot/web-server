@@ -1,4 +1,4 @@
-import { InternalModel } from '../../../../db'
+import { InternalModel } from '@magic8bot/db'
 import { ExchangeService } from '../../services/exchange.service'
 
 import { BaseRouter } from '../base.router'

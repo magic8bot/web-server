@@ -23,14 +23,22 @@
     chalk "^2.0.0"
     js-tokens "^4.0.0"
 
-"@magic8bot/db@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@magic8bot/db/-/db-2.0.5.tgz#a42e3a87bd1177f3bcb1f8736ac3eb1f4b40550d"
-  integrity sha512-UTfaaONDCcM+g6yxDq2LfwXLNmn/3giNAiXXyS25lKFsU9nla58S6clGNX6hnrqjyHcRZ+Pmh8ytHD9JQ2X+dw==
+"@magic8bot/db@^2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@magic8bot/db/-/db-2.0.6.tgz#1f07f0adfbc58a9e39ff3a387be6ba924d39bc9d"
+  integrity sha512-RXw9+i31mC5bB91ZL8aG/bONdMZbYtgpVd5w7LeHbwqKUbTUluhhiX0K29gUl8+cbBEl6yVhkzwPa8R8R0UtuQ==
   dependencies:
     cross-env "7.0.2"
     dotenv "^8.2.0"
     mongodb "^3.6.3"
+
+"@magic8bot/smq@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@magic8bot/smq/-/smq-1.0.2.tgz#f89b61e988b3427ce4fd8ca7fbdc37c579aab97b"
+  integrity sha512-XmvCGEVwgBoNHKxexonTMWt8MQVmVqyK0EW+Kd3LvVTxDB0SW69CGwZGliDmRcHbJ7GLS19ZbA148Be/8OcGdA==
+  dependencies:
+    dotenv "^8.2.0"
+    rsmq "^0.12.2"
 
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
@@ -138,6 +146,13 @@
 "@types/range-parser@*":
   version "1.2.2"
   resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.2.tgz#fa8e1ad1d474688a757140c91de6dace6f4abc8d"
+
+"@types/redis@^2.8.18":
+  version "2.8.28"
+  resolved "https://registry.yarnpkg.com/@types/redis/-/redis-2.8.28.tgz#5862b2b64aa7f7cbc76dafd7e6f06992b52c55e3"
+  integrity sha512-8l2gr2OQ969ypa7hFOeKqtFoY70XkHxISV0pAwmQ2nm6CSPb1brmTmqJCGGrekCo+pAZyWlNXr+Kvo6L/1wijA==
+  dependencies:
+    "@types/node" "*"
 
 "@types/serve-static@*":
   version "1.13.2"
@@ -1244,7 +1259,7 @@ lodash.flatten@^4.4.0:
   resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
 
-lodash@4.17.20:
+lodash@4.17.20, lodash@^4.17.15:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -1694,7 +1709,7 @@ redis@2.8.0:
     redis-commands "^1.2.0"
     redis-parser "^2.6.0"
 
-redis@3.0.2:
+redis@3.0.2, redis@^3.0.2:
   version "3.0.2"
   resolved "https://registry.yarnpkg.com/redis/-/redis-3.0.2.tgz#bd47067b8a4a3e6a2e556e57f71cc82c7360150a"
   integrity sha512-PNhLCrjU6vKVuMOyFu7oSP296mwBkcE6lrAjruBYG5LgdSqtRBoVQIylrMyVZD/lkF24RSNNatzvYag6HRBHjQ==
@@ -1762,6 +1777,15 @@ rimraf@~2.4.0:
   integrity sha1-7nEM5dk6j9uFb7Xqj/Di11k0sto=
   dependencies:
     glob "^6.0.1"
+
+rsmq@^0.12.2:
+  version "0.12.2"
+  resolved "https://registry.yarnpkg.com/rsmq/-/rsmq-0.12.2.tgz#349d59eefe47682c1e28f7d91c82080ae463cf9a"
+  integrity sha512-Rr1S/YH3hQ1X4rLSkHXL9odEJldE/wtfvZxPAMRyNR3Bb5d6wiRERIAaM6CfINNd9V2H/wdoC/yNixiv+Ehvjw==
+  dependencies:
+    "@types/redis" "^2.8.18"
+    lodash "^4.17.15"
+    redis "^3.0.2"
 
 safe-buffer@5.1.2, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"

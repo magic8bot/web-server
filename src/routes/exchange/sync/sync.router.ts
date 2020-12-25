@@ -1,4 +1,4 @@
-import { Channel } from '../../../../../smq/dist'
+import { Channel } from '@magic8bot/smq'
 import { smq } from '../../../services/smq.service'
 import { BaseRouter } from '../../base.router'
 

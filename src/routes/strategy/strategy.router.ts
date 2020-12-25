@@ -1,5 +1,5 @@
-import { InternalModel, StrategyModel } from '../../../../db'
-import { Channel } from '../../../../smq/dist'
+import { InternalModel, StrategyModel } from '@magic8bot/db'
+import { Channel } from '@magic8bot/smq'
 import { smq } from '../../services/smq.service'
 
 import { BaseRouter } from '../base.router'
