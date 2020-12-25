@@ -1,5 +1,4 @@
-import { Channel } from '@magic8bot/smq'
-import { smq } from '../../../services/smq.service'
+import { smq, Channel } from '@magic8bot/smq'
 import { BaseRouter } from '../../base.router'
 
 export class SyncRouter extends BaseRouter {

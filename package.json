@@ -1,6 +1,6 @@
 {
   "name": "@magic8bot/web-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Cryptocurrency trading bot",
   "bugs": "https://github.com/magic8bot/web-server/issues",
   "license": "MIT",
@@ -21,7 +21,7 @@
   },
   "dependencies": {
     "@magic8bot/db": "^2.0.6",
-    "@magic8bot/smq": "^1.0.2",
+    "@magic8bot/smq": "^2.0.0",
     "body-parser": "^1.19.0",
     "ccxt": "^1.39.61",
     "compression": "^1.7.4",

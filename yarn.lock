@@ -32,12 +32,13 @@
     dotenv "^8.2.0"
     mongodb "^3.6.3"
 
-"@magic8bot/smq@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@magic8bot/smq/-/smq-1.0.2.tgz#f89b61e988b3427ce4fd8ca7fbdc37c579aab97b"
-  integrity sha512-XmvCGEVwgBoNHKxexonTMWt8MQVmVqyK0EW+Kd3LvVTxDB0SW69CGwZGliDmRcHbJ7GLS19ZbA148Be/8OcGdA==
+"@magic8bot/smq@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@magic8bot/smq/-/smq-2.0.0.tgz#3cbcb1740893953e109a60bc112b1290792fec74"
+  integrity sha512-jh/rc/xew+ag8c/kO/46Uh7mJaiJplfALuF+eEZSfte8gMYwo1ErtFdLlEYAOLHgDwLFjr5yi+Qj9Ltm25qbaQ==
   dependencies:
     dotenv "^8.2.0"
+    redis "^3.0.2"
     rsmq "^0.12.2"
 
 "@sindresorhus/is@^0.14.0":
